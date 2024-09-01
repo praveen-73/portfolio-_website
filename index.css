@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: none;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.817);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1.1);             
+}
+span{
+    color: orangered;
+}
+.navbar a{
+  font-size: 18px;  
+  color: white;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transform: 0.3s ease;
+
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background:white;
+    display: flex;
+    align-items:center ;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+
+}
+.home-content h3{
+    font-size: 30px;
+}
+.home-content h1{
+    font-size: 40px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 15px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s eases;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 14px 20px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+.img-box {
+    border-radius: 50%;
+    width: 300px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background-color: black;
+}
+.about-img img{
+    position: relative;
+    width: 300px;
+    box-shadow: 0 0 25px orangered,
+                0 0 50px  orangered;
+    border-radius:50% ;
+
+
+}
+.about-content h2{
+    text-align: left;
+    color: aliceblue;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 62px;
+    color: white;
+    
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+.contact-form  h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-me form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: white(241,241,241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+/* General Container */
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading Styles */
+.Heading, .heading1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Technical Skills Section */
+.Technical-bars .bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Technical-bars .info {
+    width: 120px;
+    font-size: 18px;
+    color: #333;
+    margin-left: 15px;
+}
+
+.Technical-bars .progress-line {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+}
+
+.Technical-bars .progress-line span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: #147bbc;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Technical-bars .html span {
+    width: 90%; /* Adjust percentage for each skill */
+    background-color: #f51023;
+}
+
+.Technical-bars .css span {
+    width: 85%;
+    background-color: #147bbc;
+}
+
+.Technical-bars .JavaScript span {
+    width: 80%;
+    background-color: #5bd389;
+}
+
+.Technical-bars .python span {
+    width: 75%;
+    background-color: #3776AB;
+}
+
+.Technical-bars .django span {
+    width: 70%;
+    background-color: #b5db0b;
+}
+
+.Technical-bars .my-sql span {
+    width: 65%;
+    background-color: #F29111;
+}
+
+/* Professional Skills Section */
+.container1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.heading1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.radial-bars {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.radial-bars svg {
+    width: 150px;
+    height: 150px;
+}
+
+.radial-bars .progress-bar {
+    fill: none;
+    stroke: #f0f0f0; /* Background circle color */
+    stroke-width: 20;
+}
+
+.radial-bars .path {
+    fill: none;
+    stroke-width: 20;
+    stroke-dasharray: 502; /* Circumference of the circle */
+    stroke-dashoffset: 502; /* Initial offset */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.radial-bars .path-1 {
+    stroke: #f51023; /* Color for Creativity */
+    stroke-dashoffset: calc(502 - (502 * 0.85)); /* 85% Progress */
+}
+
+.radial-bars .path-2 {
+    stroke: #147bbc; /* Color for Communication */
+    stroke-dashoffset: calc(502 - (502 * 0.85)); /* 85% Progress */
+}
+
+.radial-bars .path-3 {
+    stroke: #5bd389; /* Color for Problem Solving */
+    stroke-dashoffset: calc(502 - (502 * 0.80)); /* 80% Progress */
+}
+
+.radial-bars .path-4 {
+    stroke: #b5db0b; /* Color for Team Work */
+    stroke-dashoffset: calc(502 - (502 * 0.85)); /* 85% Progress */
+}
+
+.radial-bars .percentage {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -110px;
+    color: #333;
+}
+
+.radial-bars .text {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+                                    /*project style*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
